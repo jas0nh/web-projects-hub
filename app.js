@@ -35,15 +35,6 @@ const projects = [
     description: "Cloudflare Pages 上已发布的公开网页项目。",
     status: "Live",
   },
-  {
-    name: "Travel Plan",
-    emoji: "🧭",
-    url: "https://travel-plan-f2r.pages.dev/",
-    source: "Cloudflare Pages",
-    repo: "https://github.com/jas0nh/travel-plan",
-    description: "旅行计划静态页面，已通过 Cloudflare Pages 发布。",
-    status: "Live",
-  },
 ];
 
 const tools = [
