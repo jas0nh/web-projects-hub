@@ -18,15 +18,6 @@ const projects = [
     status: "Live",
   },
   {
-    name: "Royale Baccarat",
-    emoji: "🃏",
-    url: "https://jas0nh.github.io/Royale-Baccarat/",
-    source: "GitHub Pages",
-    repo: "https://github.com/jas0nh/Royale-Baccarat",
-    description: "HomePage 自建项目中的公开卡牌游戏页面。",
-    status: "Live",
-  },
-  {
     name: "Gen-E",
     emoji: "🧬",
     url: "https://gen-e.pages.dev/",
@@ -46,32 +37,11 @@ const tools = [
     description: "OpenBB 的在线金融研究工作区。",
   },
   {
-    name: "Notion",
-    emoji: "🗒",
-    url: "https://notion.so/jas0nhuang",
-    source: "HomePage · 外部平台",
-    description: "个人 Notion 工作区入口。",
-  },
-  {
-    name: "TradingView Chart",
-    emoji: "📊",
-    url: "https://tradingview.com/chart/",
-    source: "HomePage · 外部平台",
-    description: "市场图表和行情观察。",
-  },
-  {
     name: "Gemini",
     emoji: "✨",
     url: "https://gemini.google.com/",
     source: "HomePage · 外部平台",
     description: "Gemini Web Chat。",
-  },
-  {
-    name: "ChatGPT",
-    emoji: "🤖",
-    url: "https://chatgpt.com/",
-    source: "HomePage · 外部平台",
-    description: "ChatGPT Web Chat。",
   },
   {
     name: "OuO Node Status",
