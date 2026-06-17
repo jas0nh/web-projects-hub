@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Projects Hub</title>
+    <meta
+      name="description"
+      content="Jason 的公开网页项目入口，集中访问已发布到互联网的静态站点、工具和常用平台。"
+    >
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/network-map.svg" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="主要导航">
+        <a class="brand" href="#top" aria-label="Web Projects Hub home">
+          <span class="brand-mark"></span>
+          <span>Web Projects Hub</span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects">公开项目</a>
+          <a href="#tools">互联网工具</a>
+          <a href="https://github.com/jas0nh" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Public web index</p>
+          <h1>一个入口，打开已经上线的网页项目。</h1>
+          <p class="lede">
+            只收录可直接从互联网访问的页面。LAN、Tailnet、localhost 和需要转发的服务不放在这里。
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">查看项目</a>
+            <a class="button button--ghost" href="https://board-game-turn-timer.pages.dev/" target="_blank" rel="noreferrer">
+              打开最新项目
+            </a>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="公开网页项目网络图">
+          <img src="assets/network-map.svg" alt="">
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <section class="summary-band" aria-label="入口摘要">
+        <div>
+          <strong id="projectCount">0</strong>
+          <span>公开项目</span>
+        </div>
+        <div>
+          <strong id="toolCount">0</strong>
+          <span>HomePage 抽出的公网工具</span>
+        </div>
+        <div>
+          <strong>0</strong>
+          <span>本地-only 服务</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-header">
+          <p class="eyebrow">Hosted projects</p>
+          <h2>自建公开项目</h2>
+          <p>GitHub Pages 和 Cloudflare Pages 上已经能直接访问的网页。</p>
+        </div>
+        <div id="projectGrid" class="link-grid"></div>
+      </section>
+
+      <section id="tools" class="section section--alt">
+        <div class="section-header">
+          <p class="eyebrow">From HomePage</p>
+          <h2>公网工具入口</h2>
+          <p>从 HomePage 的外部链接中抽出的互联网可访问项目和平台。</p>
+        </div>
+        <div id="toolGrid" class="link-grid link-grid--compact"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Only public URLs. No local probes, no tracking, no account data.</span>
+      <a href="https://github.com/jas0nh/web-projects-hub" target="_blank" rel="noreferrer">Repository</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

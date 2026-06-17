@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Public web project map</title>
+  <desc id="desc">A quiet network map of public project nodes connected to one hub.</desc>
+  <rect width="720" height="560" rx="12" fill="#fffdf8"/>
+  <path d="M0 430C114 376 170 374 284 430s192 58 436-28v158H0z" fill="#f1eadf"/>
+  <path d="M108 156h504M108 246h504M108 336h504M188 96v324M360 96v324M532 96v324" stroke="#ded5c7" stroke-width="2"/>
+  <g stroke="#126b5b" stroke-width="4" stroke-linecap="round" opacity=".82">
+    <path d="M360 268 188 156"/>
+    <path d="M360 268 532 156"/>
+    <path d="M360 268 188 336"/>
+    <path d="M360 268 532 336"/>
+    <path d="M360 268 360 118"/>
+    <path d="M360 268 360 412"/>
+  </g>
+  <circle cx="360" cy="268" r="72" fill="#126b5b"/>
+  <circle cx="360" cy="268" r="44" fill="#fffdf8"/>
+  <circle cx="360" cy="268" r="14" fill="#8f4e2a"/>
+  <g fill="#171d1b">
+    <circle cx="188" cy="156" r="28"/>
+    <circle cx="532" cy="156" r="28"/>
+    <circle cx="188" cy="336" r="28"/>
+    <circle cx="532" cy="336" r="28"/>
+    <circle cx="360" cy="118" r="28"/>
+    <circle cx="360" cy="412" r="28"/>
+  </g>
+  <g fill="#fffdf8" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="188" y="156">01</text>
+    <text x="532" y="156">02</text>
+    <text x="188" y="336">03</text>
+    <text x="532" y="336">04</text>
+    <text x="360" y="118">05</text>
+    <text x="360" y="412">06</text>
+  </g>
+  <g fill="#65706a" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="188" y="202">Pages</text>
+    <text x="532" y="202">GitHub</text>
+    <text x="188" y="382">Tools</text>
+    <text x="532" y="382">Games</text>
+    <text x="360" y="76">Live</text>
+    <text x="360" y="456">Public</text>
+  </g>
+</svg>
