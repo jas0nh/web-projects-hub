@@ -39,6 +39,27 @@ const projects = [
 
 const tools = [
   {
+    name: "Parenting Hub",
+    emoji: "👶",
+    url: "https://app.notion.com/p/jas0nhuang/Parenting-Hub-359c1e9f3e0c80ba9e40c99bb528f7b5",
+    source: "Notion",
+    description: "育儿资料和家庭事项的 Notion 工作区。",
+  },
+  {
+    name: "Finance",
+    emoji: "💰",
+    url: "https://app.notion.com/p/jas0nhuang/Finance-ac7fa67f327341459c1c6a5b1b7af020",
+    source: "Notion",
+    description: "财务管理和投资资料的 Notion 工作区。",
+  },
+  {
+    name: "ChatGPT",
+    emoji: "🤖",
+    url: "https://chatgpt.com/",
+    source: "OpenAI",
+    description: "ChatGPT web app。",
+  },
+  {
     name: "OpenBB Workspace",
     emoji: "🧠",
     url: "https://pro.openbb.co/",
