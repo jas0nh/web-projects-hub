@@ -23,7 +23,7 @@ const projects = [
     url: "https://gen-e.pages.dev/",
     source: "Cloudflare Pages",
     repo: "",
-    description: "Cloudflare Pages 上已发布的公开网页项目。",
+    description: "梅花三数求卦网站。",
     status: "Live",
   },
   {
