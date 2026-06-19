@@ -2,7 +2,7 @@
 
 一个纯静态入口网页，用来集中打开已经发布到互联网的网页项目，并从 `HomePage` 中抽出公网可访问的工具入口。
 
-Live: https://web-projects-hub.pages.dev/
+Live: https://jas0nhg-web-projects-hub.pages.dev/
 
 ## 收录原则
 
@@ -36,5 +36,5 @@ npx wrangler pages dev .
 如需直接上传部署：
 
 ```bash
-npx wrangler pages deploy . --project-name web-projects-hub
+npx wrangler pages deploy . --project-name jas0nhg-web-projects-hub
 ```

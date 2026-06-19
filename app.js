@@ -27,12 +27,12 @@ const projects = [
     status: "Live",
   },
   {
-    name: "Chiang Mai Travel Plan",
+    name: "Travel Plans",
     emoji: "🧭",
     url: "https://travel-plan-f2r.pages.dev/11d33fbe/",
     source: "Cloudflare Pages",
     repo: "",
-    description: "清迈 2026 年 6 月行程页；使用真实内容路径，root 页面为空壳。",
+    description: "旅行计划入口，当前包含清迈行程和广州 B1 美签行程；使用真实内容路径，root 页面为空壳。",
     status: "Live",
   },
 ];
