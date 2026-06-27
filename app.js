@@ -27,12 +27,21 @@ const projects = [
     status: "Live",
   },
   {
+    name: "EDT2 Admin",
+    emoji: "🛰",
+    url: "https://edt2.jas0n.cc.cd/admin",
+    source: "Edge Tunnel",
+    repo: "",
+    description: "通过 edge tunnel 暴露的管理入口页面。",
+    status: "Live",
+  },
+  {
     name: "Travel Plans",
     emoji: "🧭",
     url: "https://travel-plan-f2r.pages.dev/11d33fbe/",
     source: "Cloudflare Pages",
     repo: "",
-    description: "旅行计划入口，当前包含清迈行程和广州 B1 美签行程；使用真实内容路径，root 页面为空壳。",
+    description: "旅行计划内容入口，会持续加入新的行程页面；当前使用真实内容路径，root 页面为空壳。",
     status: "Live",
   },
 ];
