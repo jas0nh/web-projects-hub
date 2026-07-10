@@ -95,6 +95,26 @@ const projectGrid = document.querySelector("#projectGrid");
 const toolGrid = document.querySelector("#toolGrid");
 const projectCount = document.querySelector("#projectCount");
 const toolCount = document.querySelector("#toolCount");
+let scheduledThemeTimer = null;
+
+function syncScheduledTheme() {
+  const now = new Date();
+  const hour = now.getHours();
+  const isNight = hour >= 21 || hour < 9;
+  const nextChange = new Date(now);
+
+  document.documentElement.dataset.theme = isNight ? "night" : "day";
+  document.documentElement.style.colorScheme = isNight ? "dark" : "light";
+
+  nextChange.setMinutes(0, 2, 0);
+  nextChange.setHours(isNight ? 9 : 21);
+  if (nextChange <= now) {
+    nextChange.setDate(nextChange.getDate() + 1);
+  }
+
+  window.clearTimeout(scheduledThemeTimer);
+  scheduledThemeTimer = window.setTimeout(syncScheduledTheme, nextChange - now);
+}
 
 function makeLinkCard(item, compact = false) {
   const repoLink = item.repo
@@ -128,3 +148,4 @@ function render() {
 }
 
 render();
+syncScheduledTheme();

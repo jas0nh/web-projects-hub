@@ -9,6 +9,7 @@ Live: https://jas0nhg-web-projects-hub.pages.dev/
 - 只放直接从互联网访问的 URL。
 - 不收录 LAN、Tailnet、localhost 或需要本地端口转发的服务。
 - 不保存用户数据，不做登录，不做追踪。
+- 页面按访问者本地时间在 21:00–09:00 自动启用夜间模式，白天恢复浅色模式。
 
 ## 本地运行
 
