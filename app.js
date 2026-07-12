@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "Royale Baccarat",
+    emoji: "🃏",
+    url: "https://royale-baccarat.pages.dev/",
+    source: "Cloudflare Pages",
+    repo: "https://github.com/jas0nh/Royale-Baccarat",
+    description: "可交互的百家乐游戏，包含下注、资金曲线、牌局记录与荷官点评。",
+    status: "Live",
+  },
+  {
     name: "Board Game Turn Timer",
     emoji: "⏱",
     url: "https://board-game-turn-timer.pages.dev/",
