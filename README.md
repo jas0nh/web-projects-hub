@@ -31,11 +31,11 @@ python3 -m http.server 8792
 本项目包含 `wrangler.jsonc`，可用于本地 Cloudflare Pages 预览：
 
 ```bash
-npx wrangler pages dev .
+pnpm dlx wrangler pages dev .
 ```
 
 如需直接上传部署：
 
 ```bash
-npx wrangler pages deploy . --project-name jas0nhg-web-projects-hub
+pnpm dlx wrangler pages deploy . --project-name jas0nhg-web-projects-hub
 ```
