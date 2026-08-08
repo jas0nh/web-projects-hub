@@ -53,6 +53,15 @@ const projects = [
     description: "Deterministic prompt compiler for tactile zine posters and photo-editorial collages.",
     status: "View source",
   },
+  {
+    name: "Travel Map",
+    emoji: "◎",
+    url: "https://github.com/jas0nh/world-travel-log",
+    source: "GitHub · Next.js",
+    repo: "",
+    description: "Private self-hosted travel tracker with regional drill-down, plans, timelines, PMTiles and GPX overlays.",
+    status: "View source",
+  },
 ];
 
 const projectGrid = document.querySelector("#projectGrid");
