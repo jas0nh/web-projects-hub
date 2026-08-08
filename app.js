@@ -62,6 +62,15 @@ const projects = [
     description: "Private self-hosted travel tracker with regional drill-down, plans, timelines, PMTiles and GPX overlays.",
     status: "View source",
   },
+  {
+    name: "Swipe Novel",
+    emoji: "↗",
+    url: "https://swipe-novel.pages.dev/",
+    source: "Cloudflare Pages · React",
+    repo: "https://github.com/jas0nh/Swipe-Novel",
+    description: "Offline-first interactive fiction prototype: swipe a premise, read chapter one, then steer the story.",
+    status: "Try live",
+  },
 ];
 
 const projectGrid = document.querySelector("#projectGrid");
