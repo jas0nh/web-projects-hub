@@ -9,6 +9,15 @@ const projects = [
     status: "Try live",
   },
   {
+    name: "Royale Baccarat",
+    emoji: "♠",
+    url: "https://royale-baccarat.pages.dev/",
+    source: "Cloudflare Pages · React",
+    repo: "https://github.com/jas0nh/Royale-Baccarat",
+    description: "Free no-commission Baccarat simulator with side bets, correct draw rules, history and live P&L.",
+    status: "Try live",
+  },
+  {
     name: "投资偏好问卷",
     emoji: "📈",
     url: "https://investment-preference.pages.dev/",
