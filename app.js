@@ -1,21 +1,12 @@
 const projects = [
   {
-    name: "Royale Baccarat",
-    emoji: "🃏",
-    url: "https://royale-baccarat.pages.dev/",
-    source: "Cloudflare Pages",
-    repo: "https://github.com/jas0nh/Royale-Baccarat",
-    description: "可交互的百家乐游戏，包含下注、资金曲线、牌局记录与荷官点评。",
-    status: "Live",
-  },
-  {
-    name: "Board Game Turn Timer",
+    name: "TurnTable",
     emoji: "⏱",
     url: "https://board-game-turn-timer.pages.dev/",
     source: "Cloudflare Pages",
     repo: "https://github.com/jas0nh/board-game-turn-timer",
-    description: "双人桌游/棋类回合计时器，适合手机放在两位玩家中间使用。",
-    status: "Live",
+    description: "Mobile-first turn timer, 3D dice roller and random-number toolkit for tabletop games.",
+    status: "Try live",
   },
   {
     name: "投资偏好问卷",
@@ -23,87 +14,40 @@ const projects = [
     url: "https://investment-preference.pages.dev/",
     source: "Cloudflare Pages",
     repo: "https://github.com/jas0nh/investment-preference-questionnaire",
-    description: "中文投资/交易风格自测问卷，本地计分生成偏好报告。",
-    status: "Live",
+    description: "20 题识别六维投资风格；无需登录，所有答案只在浏览器本地计分。",
+    status: "Try live",
   },
   {
-    name: "Gen-E",
+    name: "梅花三数 · Gen-E",
     emoji: "🧬",
     url: "https://gen-e.pages.dev/",
     source: "Cloudflare Pages",
+    repo: "https://github.com/jas0nh/meihua-three-numbers",
+    description: "Privacy-first Meihua Yishu tool with transparent hexagram steps and reusable AI prompts.",
+    status: "Try live",
+  },
+  {
+    name: "EVA Title Card",
+    emoji: "◼",
+    url: "https://github.com/jas0nh/eva-title-skill",
+    source: "GitHub · Node.js",
     repo: "",
-    description: "梅花三数求卦网站。",
-    status: "Live",
+    description: "Browser-free Evangelion title-card generator with 16 original layouts rendered locally.",
+    status: "View source",
   },
   {
-    name: "EDT2 Admin",
-    emoji: "🛰",
-    url: "https://edt2.jas0n.cc.cd/admin",
-    source: "Edge Tunnel",
+    name: "Zine Poster Skill",
+    emoji: "✦",
+    url: "https://github.com/jas0nh/zine-poster-skill",
+    source: "GitHub · AI agents",
     repo: "",
-    description: "通过 edge tunnel 暴露的管理入口页面。",
-    status: "Live",
-  },
-  {
-    name: "Travel Plans",
-    emoji: "🧭",
-    url: "https://travel-plan-f2r.pages.dev/11d33fbe/",
-    source: "Cloudflare Pages",
-    repo: "",
-    description: "旅行计划内容入口，会持续加入新的行程页面；当前使用真实内容路径，root 页面为空壳。",
-    status: "Live",
-  },
-];
-
-const tools = [
-  {
-    name: "Parenting Hub",
-    emoji: "👶",
-    url: "https://app.notion.com/p/jas0nhuang/Parenting-Hub-359c1e9f3e0c80ba9e40c99bb528f7b5",
-    source: "Notion",
-    description: "育儿资料和家庭事项的 Notion 工作区。",
-  },
-  {
-    name: "Finance",
-    emoji: "💰",
-    url: "https://app.notion.com/p/jas0nhuang/Finance-ac7fa67f327341459c1c6a5b1b7af020",
-    source: "Notion",
-    description: "财务管理和投资资料的 Notion 工作区。",
-  },
-  {
-    name: "ChatGPT",
-    emoji: "🤖",
-    url: "https://chatgpt.com/",
-    source: "OpenAI",
-    description: "ChatGPT web app。",
-  },
-  {
-    name: "OpenBB Workspace",
-    emoji: "🧠",
-    url: "https://pro.openbb.co/",
-    source: "HomePage · 托管型项目",
-    description: "OpenBB 的在线金融研究工作区。",
-  },
-  {
-    name: "Gemini",
-    emoji: "✨",
-    url: "https://gemini.google.com/",
-    source: "HomePage · 外部平台",
-    description: "Gemini Web Chat。",
-  },
-  {
-    name: "OuO Node Status",
-    emoji: "🪢",
-    url: "https://dash.ouonetwork.com/node-stats",
-    source: "HomePage · 外部平台",
-    description: "OuO 节点状态查看。",
+    description: "Deterministic prompt compiler for tactile zine posters and photo-editorial collages.",
+    status: "View source",
   },
 ];
 
 const projectGrid = document.querySelector("#projectGrid");
-const toolGrid = document.querySelector("#toolGrid");
 const projectCount = document.querySelector("#projectCount");
-const toolCount = document.querySelector("#toolCount");
 let scheduledThemeTimer = null;
 
 function syncScheduledTheme() {
@@ -127,7 +71,7 @@ function syncScheduledTheme() {
 
 function makeLinkCard(item, compact = false) {
   const repoLink = item.repo
-    ? `<a class="secondary-link" href="${item.repo}" target="_blank" rel="noreferrer" aria-label="${item.name} repository">Repo</a>`
+    ? `<a class="secondary-link" href="${item.repo}" target="_blank" rel="noreferrer" aria-label="${item.name} repository">GitHub ↗</a>`
     : "";
 
   return `
@@ -151,9 +95,7 @@ function makeLinkCard(item, compact = false) {
 
 function render() {
   projectGrid.innerHTML = projects.map((project) => makeLinkCard(project)).join("");
-  toolGrid.innerHTML = tools.map((tool) => makeLinkCard(tool, true)).join("");
   projectCount.textContent = String(projects.length);
-  toolCount.textContent = String(tools.length);
 }
 
 render();
