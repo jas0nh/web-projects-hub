@@ -266,6 +266,42 @@ h1 {
   color: var(--accent);
 }
 
+.portfolio-note {
+  width: min(1180px, calc(100% - 40px));
+  margin: 30px auto 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.portfolio-note h2 {
+  margin: 6px 0 22px;
+  font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+}
+
+.portfolio-note__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.portfolio-note__grid p {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.portfolio-note__grid strong {
+  color: var(--text);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .footer {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -306,11 +342,17 @@ h1 {
   .link-grid--compact {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .portfolio-note__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 560px) {
   .site-header,
   .section,
+  .portfolio-note,
   .footer {
     width: min(100% - 28px, 1180px);
   }

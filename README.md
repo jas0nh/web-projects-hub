@@ -10,6 +10,15 @@ links to live demos and source repositories.
 
 ![Open source projects hub](assets/projects-hub-desktop.png)
 
+## Portfolio context
+
+- **Author:** Jason Huang ([jas0nh](https://github.com/jas0nh)).
+- **Stack:** Plain HTML/CSS/JavaScript, React, Next.js, Node.js and Cloudflare
+  Pages, selected according to each project's needs.
+- **Selection principle:** Only public projects with a working live demo or a
+  reproducible GitHub repository are included; projects with private-network
+  links, visitor tracking or unresolved client-secret risks are excluded.
+
 ## Curation rules
 
 - Every entry has a public live demo or a reproducible GitHub repository.
