@@ -1,8 +1,9 @@
 # Jason's Open Source Lab
 
-A focused, zero-tracking portfolio for Jason's public web tools and AI agent
-skills. It turns scattered projects into one curated discovery surface with direct
-links to live demos and source repositories.
+A focused, zero-tracking portfolio for Jason's public web tools, protected
+personal-service entry points, and AI agent skills. It turns scattered projects
+into one curated surface with direct links to live demos, authenticated services,
+and source repositories.
 
 **[Explore the live collection →](https://jas0nhg-web-projects-hub.pages.dev/)**
 
@@ -15,13 +16,16 @@ links to live demos and source repositories.
 - **Author:** Jason Huang ([jas0nh](https://github.com/jas0nh)).
 - **Stack:** Plain HTML/CSS/JavaScript, React, Next.js, Node.js and Cloudflare
   Pages, selected according to each project's needs.
-- **Selection principle:** Only public projects with a working live demo or a
-  reproducible GitHub repository are included; projects with private-network
-  links, visitor tracking or unresolved client-secret risks are excluded.
+- **Selection principle:** Public projects need a working live demo or a
+  reproducible GitHub repository. A private service may be listed only when its
+  production entry is intentionally shared and protected by an explicit
+  authentication gate.
 
 ## Curation rules
 
-- Every entry has a public live demo or a reproducible GitHub repository.
+- Every public project has a working live demo or a reproducible GitHub repository.
+- Protected personal services must link only to their canonical login-gated
+  production entry; never expose an itinerary path or bypass URL.
 - No LAN, Tailnet, localhost, admin, or port-forwarded destinations.
 - Projects with unresolved privacy or client-secret risks are not promoted.
 - No accounts, tracking, cookies, or visitor data storage.

@@ -54,6 +54,15 @@ const projects = [
     status: "View source",
   },
   {
+    name: "Travel Plans",
+    emoji: "🧭",
+    url: "https://travel-plan-f2r.pages.dev/",
+    source: "Cloudflare Pages · Protected",
+    repo: "",
+    description: "受密码保护的个人旅行计划入口，集中查看进行中与归档行程。",
+    status: "Sign in",
+  },
+  {
     name: "Travel Map",
     emoji: "◎",
     url: "https://github.com/jas0nh/world-travel-log",
