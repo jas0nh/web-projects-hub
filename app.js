@@ -63,6 +63,15 @@ const projects = [
     status: "Sign in",
   },
   {
+    name: "同行账本",
+    emoji: "🧾",
+    url: "https://split-ledger.jas0n.cc.cd/",
+    source: "Mac mini · Cloudflare Tunnel · Google + PIN",
+    repo: "https://github.com/jas0nh/split-ledger",
+    description: "共享账本，支持多人、多币种、分摊和收据图片；任意 Google 账号登录后仍需输入共享 PIN。",
+    status: "Sign in",
+  },
+  {
     name: "Travel Map",
     emoji: "◎",
     url: "https://github.com/jas0nh/world-travel-log",
